@@ -1,48 +1,35 @@
 class Dom {
     constructor(selector) {
-        this.$el = typeof(selector) === 'string' 
+        this.$el = typeof selector === 'string'
         ? document.querySelector(selector)
         : selector;
     }
 
     html(html) {
-        if (typeof(html) === 'string') {
+        if (typeof html === 'string') {
             this.$el.innerHTML = html;
-
             return this;
         }
-
-        return this.$el.outerHTL.trim();
+        return this.$el.outerHTML.trim();
     }
 
-   clear(params) {
+    on() {
+        
+    }
+
+    clear() {
         this.html('');
-
+        
         return this;
-    }
-
-    on(eventType, callback) {
-        this.$el.addEventListener(eventType, callback);
-    }
-    
-    off(eventType, callback) {
-        this.$el.removeEventListener(eventType, callback);
     }
 
     append(node) {
-        if (node instanceof Dom) {
-            node = node.$el;
-        }
         if (Element.prototype.append) {
-            this.$el.append(node);
+            this.$el.append(node.$el);
         } else {
             this.$el.appendChild(node);
         }
-
-        return this;
     }
-
-
 }
 
 export function $(selector) {

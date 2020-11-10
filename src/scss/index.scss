@@ -1,5 +1,7 @@
 html {
     height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -23,7 +25,7 @@ body {
     align-items: center;
 }
 
-.main-container {
+.camagru {
     height: 80%;
 }
 
@@ -41,6 +43,7 @@ body {
 
 .content-container {
     height: 100%;
+    display: flex;
 }
 
 // camera space
