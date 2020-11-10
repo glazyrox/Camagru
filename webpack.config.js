@@ -17,7 +17,7 @@ const jsLoaders = () => {
         presets: ['@babel/preset-env']
       }
     }
-  ]
+  ];
 
   if (isDev) {
     loaders.push('eslint-loader');
@@ -91,4 +91,4 @@ module.exports = {
           }
         ]
       }
-}
+};

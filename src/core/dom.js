@@ -36,10 +36,10 @@ class Dom {
         if (Element.prototype.append) {
             this.$el.append(node);
         } else {
-            this.$el.appendChild(node)
+            this.$el.appendChild(node);
         }
 
-        return this
+        return this;
     }
 
 
@@ -54,8 +54,8 @@ $.create = (tagName, classes = '') => {
     const elem = document.createElement(tagName);
     
     if (classes) {
-        elem.classList.add(classes)
+        elem.classList.add(classes);
     }
 
     return $(elem);
-}
+};

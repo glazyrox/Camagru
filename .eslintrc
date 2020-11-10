@@ -13,7 +13,6 @@
         "object-curly-spacing": "off",
         "no-trailing-spaces": "off",
         "eol-last": "off",
-        "semi": "off",
         "padded-blocks": "off",
         "quotes": "off",
         "operator-linebreak": "off",
