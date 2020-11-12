@@ -1,10 +1,10 @@
 import { Camagru } from '@/components/camagru/Camagru';
-import { Header } from '@/components/header/Header';
+import { Toolbar } from '@/components/toolbar/Toolbar';
 import { MainContent } from '@/components/mainContent/mainContent';
 import './scss/index.scss';
 
 const camagru = new Camagru('#app', {
-    components: [Header, MainContent]
+    components: [Toolbar, MainContent]
 });
 
 camagru.render();

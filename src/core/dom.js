@@ -13,7 +13,7 @@ class Dom {
         return this.$el.outerHTML.trim();
     }
 
-    on() {
+    on(action, listener) {
         
     }
 
