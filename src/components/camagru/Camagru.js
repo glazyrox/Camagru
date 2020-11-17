@@ -23,7 +23,6 @@ export class Camagru {
     render() {
         this.$el.append(this.getRoot());
         this.components.forEach(component => {
-            console.log(component);
             component.init();
         });
     }

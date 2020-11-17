@@ -12,7 +12,7 @@ export class Toolbar extends CamagruComponent {
     static className = 'toolbar';
 
     onClick(event) {
-        console.log('shalom');
+        console.log(event);
     }
 
     toHTML() {

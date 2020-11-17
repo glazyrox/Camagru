@@ -14,7 +14,8 @@ class Dom {
     }
 
     on(action, listener) {
-        
+        console.log(action, listener);
+        this.$el.addEventListener(action, listener);
     }
 
     clear() {
